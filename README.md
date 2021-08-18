@@ -1,4 +1,3 @@
-# Python-Codes
 # Luminescence Dosimetry:
 # Signal Analysis Using Python
 
