@@ -22,16 +22,16 @@ __________________________________
 **ABOUT THIS BOOK**
 
 This document is a short preview of the book "Luminescence Dosimetry:
-Signal Analysis Using Python", by Springer, which has a tentative date of
+Signal Analysis Using Python", to be published by Springer, which has a tentative date of
 publication of June 2022.
-We feature detailed worked examples of Python code, which were
+   We feature here some detailed worked examples of Python code, which were
 presented in the LED 2021 conference. Users can run immediately the Python
-codes, and modify them for their experimental data and to explore the vari-
-ous luminescence models. The theory and equations behind each subject are
+codes, and modify them for their experimental data and to explore the 
+various luminescence models. The theory and equations behind each subject are
 briefly summarized, and appropriate references are given from the literature,
 so that researchers can look up the details of the theory and the relevant
 experiments. 
-Each Python code includes comments explaining the structure
+   Each Python code includes comments explaining the structure
 and the various parts of the code. Researchers can use the Python codes to
 analyze their own experimental data, and to extract the various parameters
 describing mathematically the luminescence signals.
@@ -39,14 +39,14 @@ describing mathematically the luminescence signals.
 __________________________________
 **LISTINGS OF ALL PYTHON CODES**
 
-For a detailed Table of Contents and a Listing of the currently available Python codes, see the included pdf file:
+For a detailed _Table of Contents_ and a Listing of the 24 currently available Python codes, see the included pdf file:
 
 _PythonCodesForLED2021.pdf_
 
 __________________________________
 **HOW THE USE THE PYTHON CODES**
 
-The book contains 24 Python scripts, which are self contained and ready to run. 
+This short preview of the book contains 24 Python scripts, which are self contained and ready to run. 
 The codes are organized in folders by chapter.
 
 This document assumes some basic knowledge of Python, however I believe
