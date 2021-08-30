@@ -36,7 +36,7 @@ describing mathematically the luminescence signals.
 __________________________________
 **LISTINGS OF ALL PYTHON CODES**
 
-The following pdf file in this repository represents my oral presentation at the LED2021 online conference.
+The following pdf file in this repository represents the oral presentation with Dr George Kitis, from the LED2021 online conference.
 
 _PagonisLED.pdf_
 
