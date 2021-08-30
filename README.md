@@ -1,11 +1,8 @@
 # Luminescence Dosimetry:
 # Signal Analysis Using Python
 
-You can download all the Python codes as a single zipped folder, by clicking on the Zenodo blue box below:
 
-[![DOI](https://zenodo.org/badge/324629435.svg)](https://zenodo.org/badge/latestdoi/324629435)
-
-This repository contains all the Python scripts from the book:
+This repository contains some of the Python scripts which will be published in the book:
 
 
 **Luminescence Dosimetry:**
@@ -13,7 +10,7 @@ This repository contains all the Python scripts from the book:
 
 **by Vasilis Pagonis**
 
-**Springer, 2021**
+**Springer, 2022**
 
 **Expected date of book publication: June 2022**
 
@@ -22,7 +19,7 @@ __________________________________
 **ABOUT THIS BOOK**
 
 This document is a short preview of the book "Luminescence Dosimetry:
-Signal Analysis Using Python", to be published by Springer, which has a tentative date of
+Signal Analysis Using Python" to be published by Springer, which has a tentative date of
 publication of June 2022.
    We feature here some detailed worked examples of Python code, which were
 presented in the LED 2021 conference. Users can run immediately the Python
@@ -41,7 +38,7 @@ __________________________________
 
 For a detailed _Table of Contents_ and a Listing of the 24 currently available Python codes, see the included pdf file:
 
-_PythonCodesForLED2021.pdf_
+_LED2021.pdf_
 
 __________________________________
 **HOW THE USE THE PYTHON CODES**
@@ -57,7 +54,7 @@ downloading from the author's repository at GitHub.
 The various Python codes are self contained and ready to run, and repre-
 sent new codes written by the author.
 
-Experienced programmers will certainly nd out that they can improve
+Experienced programmers will certainly find out that they can improve
 the Python codes given here, and it is of course possible to make the codes
 more compact and elegant. However, I chose to provide Python codes which
 are simple and clear, and which can be easily modified for the purposes of
