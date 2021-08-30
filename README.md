@@ -36,7 +36,11 @@ describing mathematically the luminescence signals.
 __________________________________
 **LISTINGS OF ALL PYTHON CODES**
 
-For a detailed _Table of Contents_ and a Listing of the 24 currently available Python codes, see the included pdf file:
+The following pdf file in this repository represents my oral presentation at the LED2021 online conference.
+
+_PagonisLED.pdf_
+
+For a detailed _Table of Contents_ and a Listing of the 24 currently available Python codes, see the included detailed 100-page pdf file:
 
 _LED2021.pdf_
 
