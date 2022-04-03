@@ -1,26 +1,27 @@
-# Luminescence Dosimetry:
-# Signal Analysis Using Python
+# Luminescence Signal Analysis Using Python
 
 
 This repository contains some of the Python scripts which will be published in the book:
 
-
-**Luminescence Dosimetry:**
-**Signal Analysis Using Python**
+**Luminescence Signal Analysis Using Python**
 
 **by Vasilis Pagonis**
 
 **Springer, 2022**
 
-**Expected date of book publication: June 2022**
+**Expected date of book publication: APRIL 2022**
 
 __________________________________
 
 **ABOUT THIS BOOK**
 
-This document is a short preview of the book "Luminescence Dosimetry:
-Signal Analysis Using Python" to be published by Springer, which has a tentative date of
-publication of June 2022.
+This document is a short preview of the book 
+"Luminescence Signal Analysis Using Python" to be published by Springer,
+which has a tentative date of publication of April 2022.
+
+**PLEASE NOTE THAT THE COMPLETE PYTHON CODES WILL BE UPLOADED TO 
+THIS GITHUB WEBSITE ON APRIL 5, 2022.**
+
    We feature here some detailed worked examples of Python code, which were
 presented in the LED 2021 conference. Users can run immediately the Python
 codes, and modify them for their experimental data and to explore the 
