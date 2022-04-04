@@ -1,0 +1,7154 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass svmono
+\begin_preamble
+%%%%%%%%%%%%%%%%%%%% book.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for the chapters of your "monograph"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% choose options for [] as required from the list
+% in the Reference Guide, Sect. 2.2
+
+% allows index generation
+% standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}% used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+% etc.
+% see the list of further useful packages
+% in the Reference Guide, Sects. 2.3, 3.1-3.3
+
+% used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[labelfont=bf]{caption}
+\DeclareCaptionType{Code}
+\captionsetup[Code]{labelfont=bf,textfont={bf}}
+\usepackage[framemethod=tikz]{mdframed}
+\definecolor{mygray}{gray}{0.9}
+
+\newmdenv[
+  hidealllines=true,
+  backgroundcolor=mygray,
+  innerleftmargin=3pt,
+  innerrightmargin=3pt,
+  leftmargin=-3pt,
+  rightmargin=-3pt
+]{shadedbox}
+
+\usepackage{tikz}
+\end_preamble
+\options envcountsame,envcountchap
+\use_default_options false
+\begin_modules
+knitr
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Format 60
+InsetLayout Flex:Shaded_Box
+  LyXType           custom
+  LabelString       "Shaded Box"
+  LatexType     Environment
+  LatexName     shadedbox
+  Decoration        Classic
+  MultiPar              true
+  CustomPars        true
+  ResetsFont        true
+  LabelFont
+    Color               foreground
+    Size                Small
+  EndFont
+End
+\end_local_layout
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% sample chapter
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Use this file as a template for your own input.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+TL FROM DELOCALIZED TRANSITIONS: MODELS
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:TL-SIGNALS-FROMDELOC models-1"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python, setup, include=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+knitr::opts_chunk$set(
+\end_layout
+
+\begin_layout Plain Layout
+
+  comment = '', fig.width = 6, fig.height = 4.5,engine='python',engine.path
+ ='C:/ProgramData/Anaconda3'
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2,echo=FALSE,eval=TRUE,engine='python',engine.path ='C:/ProgramData/An
+aconda3'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+import os as os
+\end_layout
+
+\begin_layout Plain Layout
+
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = 'C:/ProgramData/Anaconda3/Library/plu
+gins/platforms'
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c1,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Solution of OTOR model using ODE solver  odeint}{
+\backslash
+label{odeint}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2fig2,eval=TRUE,echo=TRUE,fig.width=6, out.width='90%',fig.height=4.5,
+ warning=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Solution of ODE's for the OTOR model using solver odeint
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.integrate import odeint
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+# Initial conditions.
+\end_layout
+
+\begin_layout Plain Layout
+
+n0, nc0 ,m0 = 1e10, 0, 1e10
+\end_layout
+
+\begin_layout Plain Layout
+
+# Initial conditions vector
+\end_layout
+
+\begin_layout Plain Layout
+
+y0 = n0, nc0, m0
+\end_layout
+
+\begin_layout Plain Layout
+
+# Numerical parameters for OTOR.
+\end_layout
+
+\begin_layout Plain Layout
+
+N,    An,    Am,    s,   E , hr = 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1e10, 1e-8, 1e-8,  1e12, 1 , 1
+\end_layout
+
+\begin_layout Plain Layout
+
+# A grid of time points in seconds
+\end_layout
+
+\begin_layout Plain Layout
+
+t = np.linspace(0, 180, 180)
+\end_layout
+
+\begin_layout Plain Layout
+
+kB=8.617e-5
+\end_layout
+
+\begin_layout Plain Layout
+
+# differential equations of the OTOR model.
+\end_layout
+
+\begin_layout Plain Layout
+
+def deriv(y, t):
+\end_layout
+
+\begin_layout Plain Layout
+
+    n, nc, m = y
+\end_layout
+
+\begin_layout Plain Layout
+
+    dndt = - n*s*np.exp(-E/(kB*(273+hr*t)))+ nc*An*(N-n)
+\end_layout
+
+\begin_layout Plain Layout
+
+    dncdt =  n*s*np.exp(-E/(kB*(273+hr*t)))- nc*An*(N-n)-m*Am*nc
+\end_layout
+
+\begin_layout Plain Layout
+
+    dmdt = -m*Am*nc
+\end_layout
+
+\begin_layout Plain Layout
+
+    return dndt, dncdt, dmdt
+\end_layout
+
+\begin_layout Plain Layout
+
+# Integrate the OTOR equations over the time grid, t.
+\end_layout
+
+\begin_layout Plain Layout
+
+# Call `odeint` to generate the solution.
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+ret = odeint(deriv, y0, t)
+\end_layout
+
+\begin_layout Plain Layout
+
+n, nc, m = ret.T
+\end_layout
+
+\begin_layout Plain Layout
+
+# Plot the data 
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(hr*t, n, 'b',  linewidth=2, label='n(t)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(hr*t,nc*1000,'r--',linewidth=2,label='nc(t) x10$^{3}$');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend();
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('Filled traps [cm$^{-3}$]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,1.2e10);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlim(0,180);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(20,.6e10,'OTOR model');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(20,.5e10,'numerical');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(20,.4e10,'solution');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 2);
+\end_layout
+
+\begin_layout Plain Layout
+
+TL= n*s*np.exp(-E/(kB*(273+hr*t)))- nc*An*(N-n)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(hr*t,TL,linewidth=2,label='TL=-dn/dt');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,2.2e8);
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:solutionOTOR"
+
+\end_inset
+
+ Numerical solution of the system of differential equations for the OTOR
+ model using the ODE solver function 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{odeint()}
+\end_layout
+
+\end_inset
+
+.
+ (a) Plot of the concentrations of trapped electrons 
+\begin_inset Formula $n(T)$
+\end_inset
+
+ (solid line) and the conduction band electrons 
+\begin_inset Formula $n_{c}(T)$
+\end_inset
+
+ (dashed line), and (b) Plot of the luminescence intensity 
+\begin_inset Formula $I(T)$
+\end_inset
+
+, during a typical TL experiment.
+ Note that 
+\begin_inset Formula $n_{c}(T)$
+\end_inset
+
+ has been multiplied in (a) by a factor of 10
+\begin_inset Formula $^{3}$
+\end_inset
+
+, for display purposes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c2,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "95col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Solution of OTOR model using the ODE solver solve
+\backslash
+_ivp}{
+\backslash
+label{solverivp}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python test,eval=TRUE,echo=TRUE,fig.width=6, out.width='80%',fig.height=4.5,
+ warning=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Solution of the OTOR using the solver solve_ivp
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.integrate import solve_ivp
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+# Numerical parameters for OTOR.
+\end_layout
+
+\begin_layout Plain Layout
+
+N,    An,   Am,     s,   E , hr ,  kB= 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1e10, 1e-8, 1e-8,  1e12, 1 , 1,  8.617e-5
+\end_layout
+
+\begin_layout Plain Layout
+
+# Define derivative function
+\end_layout
+
+\begin_layout Plain Layout
+
+def f(t, y):
+\end_layout
+
+\begin_layout Plain Layout
+
+    dydt=[
+\end_layout
+
+\begin_layout Plain Layout
+
+		    -y[0]*s*np.exp(-E/(kB*(273+hr*t)))+y[1]*An*(N-y[0]),
+\end_layout
+
+\begin_layout Plain Layout
+
+		    y[0]*s*np.exp(-E/(kB*(273+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    hr*t)))- y[1]*An*(N-y[0])-y[2]*Am*y[1],
+\end_layout
+
+\begin_layout Plain Layout
+
+    -y[2]*Am*y[1]]
+\end_layout
+
+\begin_layout Plain Layout
+
+    return dydt
+\end_layout
+
+\begin_layout Plain Layout
+
+tspan = np.linspace(0, 180,30)
+\end_layout
+
+\begin_layout Plain Layout
+
+yinit = [1e10,0,1e10]
+\end_layout
+
+\begin_layout Plain Layout
+
+# Solve differential equation
+\end_layout
+
+\begin_layout Plain Layout
+
+sol = solve_ivp(lambda t, y: f(t, y), [tspan[0], tspan[-1]],
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+yinit, t_eval=tspan)
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=hr*sol.t.reshape(-1,1)
+\end_layout
+
+\begin_layout Plain Layout
+
+nvals,ncvals,mvals=np.squeeze(sol.y)
+\end_layout
+
+\begin_layout Plain Layout
+
+# Plots
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,nvals,'o-',label='n(T)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('n(T)  and   TL');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,1.2e10);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('OTOR model, using ODE solver   "solve_ivp"');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(sol.t, 40*Am*ncvals*mvals,'o-',label='TLx40');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OTORsolveivp"
+
+\end_inset
+
+The numerical solution obtained using the ODE solver function 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{solve
+\backslash
+_ivp()}
+\end_layout
+
+\end_inset
+
+.
+ In this case the output of the solver is evaluated at equally spaced time
+ intervals, determined by the parameter 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{tspan}
+\end_layout
+
+\end_inset
+
+ in the Python code.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c3,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "95col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Varying the parameters E,s in the OTOR model}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}{
+\backslash
+label{OTORvarEs}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python OTORvarEands,eval=TRUE,echo=TRUE,fig.width=6, out.width='100%',fig.height=
+4, warning=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Varying the parameters E,s in the OTOR model
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.integrate import solve_ivp
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+# Numerical parameters for OTOR.
+\end_layout
+
+\begin_layout Plain Layout
+
+N,      Am,     hr ,  kB= 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1e10,  1e-8   , 1,  8.617e-5
+\end_layout
+
+\begin_layout Plain Layout
+
+yinit = [1e10,0,1e10]
+\end_layout
+
+\begin_layout Plain Layout
+
+def TL(An,E,s):
+\end_layout
+
+\begin_layout Plain Layout
+
+    def f(t, y):
+\end_layout
+
+\begin_layout Plain Layout
+
+        dydt =[-y[0]*s*np.exp(-E/(kB*(273+hr*t)))+y[1]*An*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        (N-y[0]), y[0]*s*np.exp(-E/(kB*(273+hr*t)))- y[1]*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        An*(N-y[0])-y[2]*Am*y[1], -y[2]*Am*y[1]]
+\end_layout
+
+\begin_layout Plain Layout
+
+        return dydt
+\end_layout
+
+\begin_layout Plain Layout
+
+    sol = solve_ivp(lambda t, y: f(t, y), [20,220],yinit)
+\end_layout
+
+\begin_layout Plain Layout
+
+    nvals,ncvals,mvals=np.squeeze(sol.y)
+\end_layout
+
+\begin_layout Plain Layout
+
+    temps=hr*np.squeeze(sol.t)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return temps, nvals,ncvals,mvals
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+labels=['E=1.0 eV','E=1.05 eV','E=1.1 eV']
+\end_layout
+
+\begin_layout Plain Layout
+
+lins=['solid','dashed','dotted']
+\end_layout
+
+\begin_layout Plain Layout
+
+E=[1.,1.05,1.1]
+\end_layout
+
+\begin_layout Plain Layout
+
+for j in range (0,3,1): 
+\end_layout
+
+\begin_layout Plain Layout
+
+     temps, nvals, ncvals, mvals=TL(1e-10,E[j],1e12)
+\end_layout
+
+\begin_layout Plain Layout
+
+     plt.plot(temps, Am*ncvals*mvals,
+\end_layout
+
+\begin_layout Plain Layout
+
+     linestyle=lins[j], linewidth=3,label=labels[j]);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,4.2e8);
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title(r'(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+s=[1e11,1e12,5e12]
+\end_layout
+
+\begin_layout Plain Layout
+
+labels=[r's=10$^{11}$ s$^{-1}$',r's=10$^{12}$ s$^{-1}$',
+\end_layout
+
+\begin_layout Plain Layout
+
+r's=5x10$^{12}$ s$^{-1}$']
+\end_layout
+
+\begin_layout Plain Layout
+
+for j in range (0,3,1): 
+\end_layout
+
+\begin_layout Plain Layout
+
+     temps, nvals, ncvals, mvals=TL(1e-10,1,s[j])
+\end_layout
+
+\begin_layout Plain Layout
+
+     plt.plot(temps, Am*ncvals*mvals,
+\end_layout
+
+\begin_layout Plain Layout
+
+     linestyle=lins[j],linewidth=3, label=labels[j]);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,5.2e8);
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title(r'(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-effect-ofchangingEsinOTOR"
+
+\end_inset
+
+The effect of changing the kinetic parameters 
+\begin_inset Formula $E,s$
+\end_inset
+
+ characterizing the electron trap, within the OTOR model.
+ (a) As the energy 
+\begin_inset Formula $E$
+\end_inset
+
+ increases, the TL peak shifts towards higher temperatures, while the area
+ under the curve remains the same.
+ (b) Increasing the frequency factor 
+\begin_inset Formula $s$
+\end_inset
+
+ has the opposite effect, and the TL glow curve shifts towards lower temperature
+s, while the area stays again the same.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c4,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "95col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Varying the retrapping ratio R in the OTOR model}{
+\backslash
+label{OTORvarR}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python OTORvarR,eval=TRUE,echo=TRUE,fig.width=6, out.width='80%',fig.height=4,
+ warning=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Varying the parameter R in the OTOR model
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.integrate import solve_ivp
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+# Numerical parameters for OTOR.
+\end_layout
+
+\begin_layout Plain Layout
+
+N,      Am,     hr ,  kB= 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1e10,  1e-8   , 1,  8.617e-5
+\end_layout
+
+\begin_layout Plain Layout
+
+yinit = [1e10,0,1e10]
+\end_layout
+
+\begin_layout Plain Layout
+
+def TL(An,E,s):
+\end_layout
+
+\begin_layout Plain Layout
+
+    def f(t, y):
+\end_layout
+
+\begin_layout Plain Layout
+
+        dydt =[-y[0]*s*np.exp(-E/(kB*(273+hr*t)))+y[1]*An*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        (N-y[0]), y[0]*s*np.exp(-E/(kB*(273+hr*t)))- y[1]*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        An*(N-y[0])-y[2]*Am*y[1], -y[2]*Am*y[1]]
+\end_layout
+
+\begin_layout Plain Layout
+
+        return dydt
+\end_layout
+
+\begin_layout Plain Layout
+
+    sol = solve_ivp(lambda t, y: f(t, y), [50,200],yinit)
+\end_layout
+
+\begin_layout Plain Layout
+
+    nvals,ncvals,mvals=np.squeeze(sol.y)
+\end_layout
+
+\begin_layout Plain Layout
+
+    temps=hr*np.squeeze(sol.t)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return temps, nvals,ncvals,mvals
+\end_layout
+
+\begin_layout Plain Layout
+
+#######
+\end_layout
+
+\begin_layout Plain Layout
+
+temps, nvals, ncvals, mvals=TL(1e-11,1,1e12)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps, Am*ncvals*mvals,'-',linewidth=3,
+\end_layout
+
+\begin_layout Plain Layout
+
+label='R=0.001');
+\end_layout
+
+\begin_layout Plain Layout
+
+temps, nvals, ncvals, mvals=TL(1e-8,1,1e12)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps, Am*ncvals*mvals,'--',linewidth=3,
+\end_layout
+
+\begin_layout Plain Layout
+
+label='R=1');
+\end_layout
+
+\begin_layout Plain Layout
+
+temps, nvals, ncvals, mvals=TL(3e-8,1,1e12)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps, Am*ncvals*mvals,'-.',linewidth=3,
+\end_layout
+
+\begin_layout Plain Layout
+
+ label='R=3');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,4e8);
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title(r'OTOR model, varying the retrapping ratio R');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(170,2.5e8,r'R=A$_{n}$/A$_{m}$');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-effect-ofchangingRnOTOR"
+
+\end_inset
+
+The effect of changing the retrapping ratio 
+\begin_inset Formula $R=A_{n}/A_{m}$
+\end_inset
+
+ on the TL glow curve, within the OTOR model.
+ For low values of 
+\begin_inset Formula $R<<1$
+\end_inset
+
+ the asymmetric shape corresponds to first order kinetics, while for values
+ of 
+\begin_inset Formula $R\sim1$
+\end_inset
+
+ the almost symmetric shape is characteristic of second order kinetics.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c5,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{ODE for TL: First order kinetics}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-4em}{
+\backslash
+label{FOKodeint}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<ch2fig3, include=TRUE, eval=TRUE,echo=TRUE, fig.width=6, out.width='80%',fig.heig
+ht=4.5,  warning=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Numerically solve the ODE for R-W: first order kinetics
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.integrate import odeint
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+# Function for analytical solution
+\end_layout
+
+\begin_layout Plain Layout
+
+def nfirst(n0,tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    return n0*np.exp(-s*kB*((273+tmps)**2.0)/(hr*E)*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E))
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLfirst(n0,tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    return n0*s*np.exp(-E/(kB*(273+tmps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-s*kB*((273+tmps)**2.0)/(hr*E)*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E))
+\end_layout
+
+\begin_layout Plain Layout
+
+# Numerical parameters for R-W model.
+\end_layout
+
+\begin_layout Plain Layout
+
+kB,        N,     s,    E , n0 ,  hr=
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+8.617e-5, 1e10,  1e12,  1 , 1e10, 1
+\end_layout
+
+\begin_layout Plain Layout
+
+# A grid of time points and temperatures
+\end_layout
+
+\begin_layout Plain Layout
+
+t = np.linspace(0, 180, 60)
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=hr*t
+\end_layout
+
+\begin_layout Plain Layout
+
+# The R-W model differential equation.
+\end_layout
+
+\begin_layout Plain Layout
+
+def deriv(y, t):
+\end_layout
+
+\begin_layout Plain Layout
+
+    n = y
+\end_layout
+
+\begin_layout Plain Layout
+
+    dndt = - n*s*np.exp(-E/(kB*(273+hr*t)))
+\end_layout
+
+\begin_layout Plain Layout
+
+    return dndt
+\end_layout
+
+\begin_layout Plain Layout
+
+y0 = n0
+\end_layout
+
+\begin_layout Plain Layout
+
+ret = odeint(deriv, y0, t)
+\end_layout
+
+\begin_layout Plain Layout
+
+n= ret.flatten()
+\end_layout
+
+\begin_layout Plain Layout
+
+# Plot the data 
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps, n, 'o', label='Numerical');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[nfirst(n0,x) for x in temps],'-',
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+label='Analytical');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('Filled traps [cm$^{-3}$]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,1.2e10);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlim(0,180);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(20,.6e10,'R-W model');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(20,.5e10,'numerical');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(20,.4e10,'solution n(t)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 2);
+\end_layout
+
+\begin_layout Plain Layout
+
+TL= n*s*np.exp(-E/(kB*(273+hr*t)))
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,TL,'o',label='Numerical');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLfirst(n0,x) for x in temps],'-',
+\end_layout
+
+\begin_layout Plain Layout
+
+label='Analytical');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,4e8);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(50,1.5,'TL');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Numerical-solution-ofODERW"
+
+\end_inset
+
+Numerical solution of the Randall and Wilkins Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rwdiffeqttime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), for first order kinetics TL is shown as circles.
+ (a) Remaining trapped electrons 
+\begin_inset Formula $n(T)$
+\end_inset
+
+, and (b) The corresponding TL signal.
+ The solid lines represent the analytical Eqs.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rwn(t)approximate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rwTL-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), respectively.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c6,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{First-order TL by varying the initial trap concentrations }{
+\backslash
+label{FOKvan0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2fig4,eval=TRUE,echo=TRUE,fig.width=6,fig.height=4.5, out.width ='80%'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Simulate first-order glow peaks with various 
+\end_layout
+
+\begin_layout Plain Layout
+
+# initial electron trap concentrations (n0).
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+kB,       E,  s,    beta =
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+8.617e-5, 1, 1e12, 1
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLfirst(n0,tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    return n0*s*np.exp(-E/(kB*(273+tmps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-s*kB*((273+tmps)**2.0)/(beta*E)*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E))
+\end_layout
+
+\begin_layout Plain Layout
+
+tims= range(50,int(170/beta)-1,1)
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=[beta*tim for tim in tims]
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLfirst(1e10,x) for x in temps],'+-',c='r',
+\end_layout
+
+\begin_layout Plain Layout
+
+label=r'n$_{0}$=1e10 cm$^{-3}$');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLfirst(2e10,x) for x in temps],'o-',c='g',
+\end_layout
+
+\begin_layout Plain Layout
+
+label=r'n$_{0}$=2e10 cm$^{-3}$');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLfirst(3e10,x) for x in temps],'^-',c='b',
+\end_layout
+
+\begin_layout Plain Layout
+
+label=r'n$_{0}$=3e10 cm$^{-3}$');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('Variable Initial occupancy n0');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(60,8e8,'First order');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(60,7.2e8,'Kinetics');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel(r'TL [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-of-first-orderdose"
+
+\end_inset
+
+Simulation of first-order TL glow peaks with three different initial electron
+ trap concentrations 
+\begin_inset Formula $n_{0}=1\:,2,\:3\times10^{10}$
+\end_inset
+
+ cm
+\begin_inset Formula $^{-3}$
+\end_inset
+
+.
+ The location of the maximum TL intensity does not shift significantly as
+ 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ changes, and the peak height and total area under the curve is proportional
+ to 
+\begin_inset Formula $n_{0}.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c7,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch1Fig2,echo=FALSE,eval=TRUE,results='hold',fig.show='hold',collapse=TRU
+E,fig.width=6,out.width='100%',fig.height=4.5>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+TL6gyx=([86.5761, 102.251, 116.299, 130.386, 138.688, 143.726, 148.77, 150.55, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          155.66, 159.111, 161.743, 165.215, 167.875, 170.523, 174.034, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          177.518, 179.326, 181.919, 183.721, 186.315, 189.721, 196.408, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          202.061, 204.44, 209.252, 213.23, 214.752, 217.861, 221.822, 224.14, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          229.705, 231.991, 236.732, 243.115, 249.499, 255.949, 263.223, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          270.519, 284.452, 300.885])
+\end_layout
+
+\begin_layout Plain Layout
+
+TL6gyy=([0.0914277, 0.128703, 0.219691, 0.40416, 0.549594, 0.775742, 1.01524, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          1.33546, 1.73522, 2.10856, 2.4954, 2.92217, 3.37578, 3.80269, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          4.32293, 4.7764, 5.16339, 5.45675, 5.83039, 6.12375, 6.39026, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          6.61611, 6.33464, 6.10717, 5.78578, 5.43782, 5.13037, 4.67573, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          4.28771, 3.91334, 3.41819, 2.9637, 2.4687, 1.96005, 1.4514, 1.103, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          0.754462, 0.45934, 0.269881, 0.146754])
+\end_layout
+
+\begin_layout Plain Layout
+
+TL4gyx=([84.5304, 106.077, 125.138, 139.227, 149.171, 155.801, 161.602, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          164.088, 168.232, 171.547, 174.862, 180.663, 185.635, 194.751, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          203.039, 207.182, 212.155, 216.298, 220.442, 223.757, 230.387, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          237.017, 245.304, 253.591, 270.166, 281.768, 299.171])
+\end_layout
+
+\begin_layout Plain Layout
+
+TL4gyy=([0.0977419, 0.138974, 0.24721, 0.529719, 0.932849, 1.48348, 1.96696, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          2.45029, 2.96055, 3.34996, 3.8199, 4.34365, 4.73314, 4.97516, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          4.70707, 4.38511, 4.03634, 3.63384, 3.25819, 2.85565, 2.38615, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          1.83611, 1.29957, 0.910675, 0.508732, 0.307909, 0.147614])
+\end_layout
+
+\begin_layout Plain Layout
+
+TL3gyx=([101.653, 121.488, 137.19, 150.413, 160.331, 167.769, 171.074, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          177.686, 185.124, 189.256, 196.694, 207.438, 211.57, 216.529, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          224.793, 233.058, 241.322, 254.545, 270.248, 300.])
+\end_layout
+
+\begin_layout Plain Layout
+
+TL3gyy=([0.048812, 0.13902, 0.270145, 0.549033, 1.0428, 1.48343, 1.91142, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          2.41916, 2.79284, 3.07335, 3.13898, 2.94956, 2.64079, 2.29169, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          1.87504, 1.4182, 1.05512, 0.597403, 0.219599, 0.0669643])
+\end_layout
+
+\begin_layout Plain Layout
+
+TL1gyx=([126.453, 143.857, 159.62, 171.278, 182.92, 195.355, 208.545, 219.222, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          229.899, 243.055, 258.718, 275.2])
+\end_layout
+
+\begin_layout Plain Layout
+
+TL1gyy=([0.0154953, 0.134477, 0.280391, 0.493636, 0.666704, 0.759343, 
+\end_layout
+
+\begin_layout Plain Layout
+
+          0.677809, 0.516141, 0.354473, 0.192584, 0.0974359, 0.0557831])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+gr1=plt.plot(TL6gyx, TL6gyy, 'o-',c='red',label='6 Gy');
+\end_layout
+
+\begin_layout Plain Layout
+
+gr2=plt.plot(TL4gyx, TL4gyy, '^-',c='green',label='4 Gy');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(TL3gyx, TL3gyy, 's-',c='blue',label='3 Gy');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(TL1gyx, TL1gyy, '+-',c='black',label='1 Gy');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim([0,10]); 
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlim([90,300]);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(150, 7,'MBO');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(150, 6.6,'TL');
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 2);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(TL6gyx, TL6gyy/np.amax(TL6gyy), 'o-',c='red',label='6 Gy');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(TL4gyx, TL4gyy/np.amax(TL4gyy), '^-',c='green',label='4 Gy');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(TL3gyx, TL3gyy/np.amax(TL3gyy), 's-',c='blue',label='3 Gy');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(TL1gyx, TL1gyy/np.amax(TL1gyy), '+-',c='black',label='1 Gy');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim([0,1.3]); 
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(110,1, 'Scaled');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(110,.95, 'TL');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Example-of-MBOdose-1"
+
+\end_inset
+
+(a) Example of a series of TL glow curves for sample MBO, at different beta
+ doses.
+ (b) The data in (a) is normalized to the maximum TL height.
+ As the dose increases, the shape of the TL glow curves in (a) stays the
+ same, while the height of the TL signal is proportional to the irradiation
+ dose.
+ For more details see Pagonis et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pagonis2019b"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c8,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Second-order TL by varying the initial trap concentrations }{
+\backslash
+label{SOKvan0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-4em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2Fig5,eval=TRUE,echo=TRUE,fig.width=6,fig.height=4.5,out.width ='80%'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Simulate second-order glow peaks with various 
+\end_layout
+
+\begin_layout Plain Layout
+
+# initial electron trap concentrations (n0).
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+kB,       E,  s,    beta , N=
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+8.617e-5, 1, 1e12,   1 ,   1e10
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLsec(n0,tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    expint=kB*((273+tmps)**2.0)/E*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return (n0**2.0)*(s/N)*np.exp(-E/(kB*(273+tmps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    ((1+(n0*s/(beta*N))*expint)**(-2.00) )
+\end_layout
+
+\begin_layout Plain Layout
+
+tims= range(50,int(220/beta)-1,1)
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=[beta*tim for tim in tims]
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLsec(2e9,x) for x in temps] ,'+-',
+\end_layout
+
+\begin_layout Plain Layout
+
+c='r',label=r'n$_{0}$/N=0.2');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLsec(4e9,x) for x in temps] ,'o-',
+\end_layout
+
+\begin_layout Plain Layout
+
+c='g',label=r'n$_{0}$/N=0.4');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLsec(6e9,x) for x in temps] ,'^-',
+\end_layout
+
+\begin_layout Plain Layout
+
+c='b',label=r'n$_{0}$/N=0.6');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('Variable Initial occupancy n0');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(50,1e8,'Second order');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(50,.9e8,'Kinetics');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel(r'TL [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-of-secondorddose"
+
+\end_inset
+
+Simulation of second order TL glow peaks with three different initial electron
+ trap concentrations 
+\begin_inset Formula $n_{0}/N=0.2,0.4,0.6$
+\end_inset
+
+.
+ As the dose increases, the shape of the TL glow curve does not stay the
+ same, and the location of the maximum TL intensity shifts towards lower
+ temperatures.
+ However, the 
+\emph on
+area
+\emph default
+ under the peak stays proportional to 
+\begin_inset Formula $n_{0}.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c9,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{1st and 2nd order TL with the same parameters}{
+\backslash
+label{cfFOKSOK}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2fig7, include=TRUE ,eval=TRUE,echo=TRUE,  warning=FALSE,,fig.width=6,
+fig.height=4.5,out.width ='80%'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Compare 1st and 2nd order TL with the same parameters
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+kB,       E,  s,    beta , N=
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+8.617e-5, 1, 1e12,   1 ,   1e10
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLfirst(n0,tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    return n0*s*np.exp(-E/(kB*(273+tmps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-s*kB*((273+tmps)**2.0)/(beta*E)*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E))
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLsec(n0,tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    expint=kB*((273+tmps)**2.0)/E*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return (n0**2.0)*(s/N)*np.exp(-E/(kB*(273+tmps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    ((1+(n0*s/(beta*N))*expint)**(-2.00) )
+\end_layout
+
+\begin_layout Plain Layout
+
+tims= range(25,int(220/beta)-1,1)
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=[beta*tim for tim in tims]
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLfirst(1e10,x) for x in temps],'+-',
+\end_layout
+
+\begin_layout Plain Layout
+
+c='r',label=r'b=1');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLsec(1e10,x) for x in temps] ,'o-',c='b',
+\end_layout
+
+\begin_layout Plain Layout
+
+label=r'b=2');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('Compare b=1 and b=2');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(40,2.7e8,'Compare Kinetics');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(40,2.5e8,'First order vs');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(40,2.3e8,'second order');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel(r'TL [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Comparison-of-simulatedb=1b=2"
+
+\end_inset
+
+Comparison of simulated first and second order TL peaks, evaluated with
+ the same kinetic parameters.
+ The second order process is slower in time, and the peak shape for second
+ order is almost symmetric.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c10,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{The initial rise method: find energy E from TL data}{
+\backslash
+label{IRmethod}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-4em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python InitialRiseMethodWithDataFile,eval=TRUE,echo=TRUE,fig.show = 'hold',resu
+lts='hold',collapse=TRUE,fig.width=6,fig.height=4.5,out.width ='80%'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Apply the initial rise method to find the activation energy E
+\end_layout
+
+\begin_layout Plain Layout
+
+# Load the data from txt file, which  contains pairs of
+\end_layout
+
+\begin_layout Plain Layout
+
+# data  in the form: (Temperature_in_K,TL_Intensity (any units)
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy import stats
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+from prettytable import PrettyTable 
+\end_layout
+
+\begin_layout Plain Layout
+
+data = np.loadtxt('lbodata.txt')
+\end_layout
+
+\begin_layout Plain Layout
+
+x_data,y_data = data[:, 0], data[:, 1]
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(x_data,y_data,'+-',c='green',label='TL');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [K]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,140);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(370, 100,'Sample');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(370, 90,'LBO');
+\end_layout
+
+\begin_layout Plain Layout
+
+kB=8.617*1e-5 # Boltzmann constant in eV/K
+\end_layout
+
+\begin_layout Plain Layout
+
+initialPos=7  #analyze data points  #6 to #14
+\end_layout
+
+\begin_layout Plain Layout
+
+finalPos=13
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(x_data[initialPos:finalPos],y_data[initialPos:
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+finalPos],"o",c='r',label='IR-data');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+x= 1/(kB*x_data[initialPos:finalPos])
+\end_layout
+
+\begin_layout Plain Layout
+
+y= np.log(y_data[initialPos:finalPos])
+\end_layout
+
+\begin_layout Plain Layout
+
+slope, intercept,r_value,p_value, std_err=stats.linregress(x,y)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(x,y,'ro',label='Data');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(x,x*slope+intercept,label='Fit');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'1/(kT) (eV$^{-1}$)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('ln(TL)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)  Initial rise method');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+slope, intercept, rsqr, p_value,std_err=
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+np.round(slope,2),np.round(intercept,2),np.round(
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+r_value**2.0,3),format(p_value,"10.2E"), np.round(std_err,2)
+\end_layout
+
+\begin_layout Plain Layout
+
+myTable=PrettyTable(['E (eV)','dE (eV)','p-value','R^2']) 
+\end_layout
+
+\begin_layout Plain Layout
+
+myTable.add_row([-slope, std_err, p_value,rsqr]);
+\end_layout
+
+\begin_layout Plain Layout
+
+print(myTable)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Example-of-applyingIRtofindE"
+
+\end_inset
+
+Example of applying the initial rise method to find the activation energy
+ 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ (a) The red circles indicates the initial rise area being analyzed; (b)
+ The slope of the best line fit gives the activation energy (
+\begin_inset Formula $-E$
+\end_inset
+
+ ).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c11,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{TL glow curve for three different heating rates}{
+\backslash
+label{TL3betas}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2fig9,eval=TRUE,echo=TRUE,fig.width=6, fig.height=4.5,out.width=
+\begin_inset Quotes erd
+\end_inset
+
+80%
+\begin_inset Quotes erd
+\end_inset
+
+>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Plot the same TL glow curve for three different heating rates
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+kB,       E,  s,     n0 ,     N=
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+8.617e-5, 1, 1e12,   1e10 ,   1e10
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLfirst(beta,tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    return n0*(s/beta)*np.exp(-E/(kB*(273+tmps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-s*kB*((273+tmps)**2.0)/(beta*E)*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E))
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=range(50,160,1)
+\end_layout
+
+\begin_layout Plain Layout
+
+symb=('o-','^-','+-')
+\end_layout
+
+\begin_layout Plain Layout
+
+for j in range(1,4,1):
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.plot(temps,[TLfirst(j,x) for x in temps],
+\end_layout
+
+\begin_layout Plain Layout
+
+    symb[j-1]);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('Variable heating rates');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlim(50,160);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,4e8);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(105,3.3e8,'1 K/s');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(117,3.1e8,'2 K/s');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(130,2.8e8,'3 K/s');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel(r'TL/$
+\backslash
+beta$ [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulation-of-theHRmethods2"
+
+\end_inset
+
+Simulation of the same TL glow curve measured with three different heating
+ rates 
+\begin_inset Formula $\beta=1,2,3$
+\end_inset
+
+ K/s.
+ As the heating rate increases, the TL peak shifts to the right towards
+ higher temperatures, and the intensity decreases.
+ However, the area under the curves stays the same.
+ Notice that the y-scale is 
+\begin_inset Formula $TL/\beta$
+\end_inset
+
+, i.e.
+ in counts/K, and not in counts/s.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c12,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Apply heating rate method to TL data, to find E,s}{
+\backslash
+label{hrmethod}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-4em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python HeatingRateMethodFindEandsrm,eval=TRUE,results='hold',fig.show='hold',co
+llapse=TRUE,fig.width=6,fig.height=4,out.width ='100%'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Apply the heating rate method to find E,s 
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy import stats
+\end_layout
+
+\begin_layout Plain Layout
+
+from prettytable import PrettyTable 
+\end_layout
+
+\begin_layout Plain Layout
+
+kB,       E, s,     n0 =
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+8.617e-5, 1, 1e12, .2e10
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLfirst(beta,temps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    return n0*(s/beta)*np.exp(-E/(kB*(273+temps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-s*kB*((273+temps)**2.0)/(beta*E)*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-E/(kB*(273+temps)))*(1-2*kB*(273+temps)/E))
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=np.arange(50,160)
+\end_layout
+
+\begin_layout Plain Layout
+
+It1=[TLfirst(1,x) for x in temps]
+\end_layout
+
+\begin_layout Plain Layout
+
+It2=[TLfirst(2,x) for x in temps]
+\end_layout
+
+\begin_layout Plain Layout
+
+It3=[TLfirst(3,x) for x in temps]
+\end_layout
+
+\begin_layout Plain Layout
+
+It4=[TLfirst(4,x) for x in temps]
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+symb=('o-','^-','+-','x-')
+\end_layout
+
+\begin_layout Plain Layout
+
+for j in range(1,5,1):
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.plot(temps,[TLfirst(j,x) for x in temps],symb[j-1]);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(130,6e7,r'$
+\backslash
+beta$=1-4 K/s');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlim(70,160);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,7e7);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+Tmax=[273+temps[np.argmax(It1)],273+temps[np.argmax(It2)],
+\end_layout
+
+\begin_layout Plain Layout
+
+273+temps[np.argmax(It3)],273+temps[np.argmax(It4)]]
+\end_layout
+
+\begin_layout Plain Layout
+
+y=[np.log(Tmax[0]**2/1),np.log(Tmax[1]**2/2),np.log(Tmax[2]**2/
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+3),np.log(Tmax[3]**2/4)]
+\end_layout
+
+\begin_layout Plain Layout
+
+x=[1.0/(kB*u) for u in Tmax]
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 2);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(x,y,"o",c="r");
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel(r'ln(T$_{m}^{2}$/$
+\backslash
+beta$)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'1/(kT$_{m}$) [eV$^{-1}$]');
+\end_layout
+
+\begin_layout Plain Layout
+
+x=np.array(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+y=np.array(y)
+\end_layout
+
+\begin_layout Plain Layout
+
+slope, intercept,r_value,p_value,std_err=stats.linregress(x,y)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(x,x*slope+intercept,label='Fit');
+\end_layout
+
+\begin_layout Plain Layout
+
+slope, intercept, rsqr, std_err=np.round(slope,2),
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+np.round(intercept,2),np.round(r_value**2.0,3),
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+np.round(std_err,2)
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(29,11.6,'Heating rate');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(29,11.5,'method');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+s=format(np.exp(-intercept)*slope/kB, "10.2E")
+\end_layout
+
+\begin_layout Plain Layout
+
+myTable=PrettyTable([ "E (eV)",  "dE (eV)",
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+"intercept I","s (s^-1)","R^2"]);  
+\end_layout
+
+\begin_layout Plain Layout
+
+myTable.add_row([slope, std_err, intercept, s, rsqr]);
+\end_layout
+
+\begin_layout Plain Layout
+
+print(myTable) 
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Applying-the-heatingratemethdo"
+
+\end_inset
+
+Applying the heating rate method to obtain both the activation energy 
+\begin_inset Formula $E$
+\end_inset
+
+ and the frequency factor 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ (a) The simulated TL glow curves for heating rates 
+\begin_inset Formula $\beta=$
+\end_inset
+
+1-4 K/s and (b) The slope and intercept of the best fit line yield both
+ parameters (
+\begin_inset Formula $E,s$
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c13,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Plot of the empirical analytical equation for GOK }{
+\backslash
+label{plotGOK}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python GOKanalytical,eval=TRUE,fig.width=6,echo=TRUE, fig.height=4.5,out.width=
+\begin_inset Quotes erd
+\end_inset
+
+80%
+\begin_inset Quotes erd
+\end_inset
+
+>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Plot of the analytical equation for GOK
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+kB,       E,  s,    beta , n0,    N=
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+8.617e-5, 1, 1e12,   1 ,   1e10,  1e10
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLgen(b,tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    expint=kB*((273+tmps)**2.0)/E*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E)
+\end_layout
+
+\begin_layout Plain Layout
+
+    a=(n0**(b-1))*(s/(N**(b-1)))
+\end_layout
+
+\begin_layout Plain Layout
+
+    return n0*a*np.exp(-E/(kB*(273+tmps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    ((1+(b-1)*a/beta*expint)**(-b/(b-1)) )
+\end_layout
+
+\begin_layout Plain Layout
+
+tims= range(25,int(220/beta)-1,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=[beta*tim for tim in tims]
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLgen(1.001,x) for x in temps],'+-',
+\end_layout
+
+\begin_layout Plain Layout
+
+c='r',label=r'b=1.001');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLgen(1.5,x) for x in temps] ,'o-',
+\end_layout
+
+\begin_layout Plain Layout
+
+ c='g',label=r'b=1.5');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLgen(2.0,x) for x in temps] ,'^-',
+\end_layout
+
+\begin_layout Plain Layout
+
+ c='b',label=r'b=2');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('Compare GOK TL glow curves: b=1, 1.5 and 2');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RasheedyGOK b=1-1.5-2"
+
+\end_inset
+
+Plot of GOK Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:GOKanalyticalFinal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) for three values of the kinetic order parameter 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $b$
+\end_inset
+
+ increases from 
+\begin_inset Formula $b=1.001$
+\end_inset
+
+ to 
+\begin_inset Formula $b=2$
+\end_inset
+
+, the TL glow curve changes from the asymmetric first order kinetics to
+ the very nearly symmetric second order TL glow curve.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c14,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{The GOT equation for TL in the OTOR model }{
+\backslash
+label{GOTodeint}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2fig11,eval=TRUE,fig.width=6,echo=TRUE, fig.height=4.5,out.width=
+\begin_inset Quotes erd
+\end_inset
+
+80%
+\begin_inset Quotes erd
+\end_inset
+
+>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Numerical solution of the GOT equation for TL
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.integrate import odeint
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+# Numerical integration of GOT model.
+\end_layout
+
+\begin_layout Plain Layout
+
+n0,    N,   R,   s,   E ,hr , kB=
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1e10, 1e10, 1,  1e12, 1 , 1,  8.617e-5
+\end_layout
+
+\begin_layout Plain Layout
+
+t = np.linspace(0, 180, 180)
+\end_layout
+
+\begin_layout Plain Layout
+
+def deriv(y, t):
+\end_layout
+
+\begin_layout Plain Layout
+
+    n = y
+\end_layout
+
+\begin_layout Plain Layout
+
+    dndt = - (n**2.0)*s*np.exp(-E/(kB*(273+hr*t)))/((R*(N-n)+n))
+\end_layout
+
+\begin_layout Plain Layout
+
+    return dndt
+\end_layout
+
+\begin_layout Plain Layout
+
+y0 = n0
+\end_layout
+
+\begin_layout Plain Layout
+
+ret = odeint(deriv, y0, t)
+\end_layout
+
+\begin_layout Plain Layout
+
+n= ret.flatten()
+\end_layout
+
+\begin_layout Plain Layout
+
+# Plot the data 
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(hr*t, n, 'b+',  linewidth=3, label='n(t)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('n(t)  and  TL');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,1.2e10);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlim(0,180);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('Numerical integration of GOT model');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+TL=  (n**2.0)*s*np.exp(-E/(kB*(273+hr*t)))/((R*(N-n)+n))
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(hr*t,30*TL,'r-', linewidth=3,label='TL x30');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Numerical-solution-ofGOT_TL"
+
+\end_inset
+
+Numerical solution of the GOT model Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:otor2-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) for TL, showing the concentration of filled traps 
+\begin_inset Formula $n(T)$
+\end_inset
+
+, and the corresponding TL glow curve.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c15,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Plot the Lambert  function and solution to GOT model}{
+\backslash
+label{plotWandGOT}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2fig12aExtra,eval=TRUE,echo=TRUE,fig.width=6, fig.height=4.5,out.width=
+\begin_inset Quotes erd
+\end_inset
+
+85%
+\begin_inset Quotes erd
+\end_inset
+
+>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+#  Plot the analytical solution of GOT, using Lambert W-function 
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.special import lambertw
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+t = np.arange(0.0, 150.0, 1.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+ys = lambertw(t)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(t, ys,label='Lambert W(x)');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('W(x)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel('x');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 2);
+\end_layout
+
+\begin_layout Plain Layout
+
+t = np.arange(0.0, 150.0, 3)
+\end_layout
+
+\begin_layout Plain Layout
+
+no,      N,      R,    s,   E, kB,      beta= 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1.0E10, 1.0E10, 1e-4, 1e12, 1, 8.617e-5, 1
+\end_layout
+
+\begin_layout Plain Layout
+
+c=(no/N)*(1-R)/R
+\end_layout
+
+\begin_layout Plain Layout
+
+expint=kB*((273+beta*t)**2.0)/(beta*E)*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-E/(kB*(273+t*beta)))*(1-2*kB*(273+beta*t)/E)
+\end_layout
+
+\begin_layout Plain Layout
+
+zTL=(1/c)-np.log(c)+(s*expint/(beta*(1-R)))
+\end_layout
+
+\begin_layout Plain Layout
+
+lam=np.real(lambertw(np.exp(zTL)))
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(t,(N*R/((1-R)))*(1/lam),'r-',label='n(t)');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('n(t)   and  TL');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylim(0,1.2e10);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlim(0,150);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(20,.6e10,'GOT model');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(20,.5e10,'KV-TL equation');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(t,30*(N*R/((1-R)**2.0))*s*np.exp(-E/(kB*(273+t*beta)
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))/(lam+lam**2),'b--',label='TL x30');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:(a)-Plot-oflambertsolutionTL"
+
+\end_inset
+
+(a) Plot of the real positive branch of the Lambert function 
+\begin_inset Formula $W(x)$
+\end_inset
+
+ between 
+\begin_inset Formula $x=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=150$
+\end_inset
+
+.
+ (b) Plot of the analytical Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:n(t)LambertGOT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) for 
+\begin_inset Formula $n(t)$
+\end_inset
+
+ of the GOT model and the corresponding analytical KV-TL Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KVTLoriginal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), based on the Lambert 
+\emph on
+W 
+\emph default
+function.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c16,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Plot the solution of GOT model using omega function}{
+\backslash
+label{plotWandGOTomega}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python ch2omega,eval=TRUE,echo=TRUE,fig.width=6, fig.height=4.5,out.width=
+\begin_inset Quotes erd
+\end_inset
+
+85%
+\begin_inset Quotes erd
+\end_inset
+
+>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+#  Plot the solution of GOT, using the Wright omega function 
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.special import lambertw
+\end_layout
+
+\begin_layout Plain Layout
+
+from scipy.special import wrightomega
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+t = np.arange(0.0, 200.0, 1.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+ys = lambertw(t)
+\end_layout
+
+\begin_layout Plain Layout
+
+no,      N,      R,    s,   E, kB,      beta= 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1.0E10, 1.0E10, .99, 1e12, 1, 8.617e-5, 1
+\end_layout
+
+\begin_layout Plain Layout
+
+c=(no/N)*(1-R)/R
+\end_layout
+
+\begin_layout Plain Layout
+
+expint=kB*((273+beta*t)**2.0)/(beta*E)*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    np.exp(-E/(kB*(273+t*beta)))*(1-2*kB*(273+beta*t)/E)
+\end_layout
+
+\begin_layout Plain Layout
+
+zTL=(1/c)-np.log(c)+(s*expint/(beta*(1-R)))
+\end_layout
+
+\begin_layout Plain Layout
+
+lam=np.real(lambertw(np.exp(zTL)))
+\end_layout
+
+\begin_layout Plain Layout
+
+lam2=wrightomega(zTL)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(t,(N*R/((1-R)))*(1/lam),'r-',label='n(t)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(t,30*(N*R/((1-R)**2.0))*s*np.exp(-E/(kB*(273+t*beta)
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))/(lam+lam**2),'b--',label='TL x30');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(0,.7e10,'KV-TL eqt.');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(0,.6e10,'lambertw');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(0,.5e10,'overflow');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 2);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('n(t)   and  TL');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(0,.7e10,'KV-TL eqt.');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(0,.6e10,'with');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(0,.5e10,'wrightomega');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(t,(N*R/((1-R)))*(1/lam2),'r-',label='n(t)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(t,30*(N*R/((1-R)**2.0))*s*np.exp(-E/(kB*(273+t*beta)
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))/(lam2+lam2**2),'b--',label='TL x30');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL signal [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Plot-of-theW-1"
+
+\end_inset
+
+(a) Example of numerical overflow while using the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{lambertw()}
+\end_layout
+
+\end_inset
+
+ function in Python to evaluate the GOT Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:n(t)LambertGOT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and the corresponding analytical KV-TL Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KVTLoriginal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ (b) The numerical overflow in (a) is overcome by using the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{wrightomega()}
+\end_layout
+
+\end_inset
+
+ function in Python.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python c17,echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+for element in dir():
+\end_layout
+
+\begin_layout Plain Layout
+
+	if element[0:2] != "__":
+\end_layout
+
+\begin_layout Plain Layout
+
+		del globals()[element]
+\end_layout
+
+\begin_layout Plain Layout
+
+		del element
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Code}[!ht]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Plot the analytical solution of the MOK TL glow curves}{
+\backslash
+label{plotMOK}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Code}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<python analyticalMOK,eval=TRUE,echo=TRUE,fig.width=6, fig.height=4,out.width=
+\begin_inset Quotes erd
+\end_inset
+
+100%
+\begin_inset Quotes erd
+\end_inset
+
+>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+# Plot of the analytical equations for MOK
+\end_layout
+
+\begin_layout Plain Layout
+
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+import warnings
+\end_layout
+
+\begin_layout Plain Layout
+
+warnings.filterwarnings("ignore")
+\end_layout
+
+\begin_layout Plain Layout
+
+kB,       E,  s,    beta =
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+8.617e-5, 1, 1e12,   1 
+\end_layout
+
+\begin_layout Plain Layout
+
+def nMOK(tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    expint=kB*((273+tmps)**2.0)/E*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E)
+\end_layout
+
+\begin_layout Plain Layout
+
+    Ft=np.exp(g*Nd*s/beta*expint)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return alpha*Nd/(Ft-alpha)
+\end_layout
+
+\begin_layout Plain Layout
+
+def TLMOK(tmps):
+\end_layout
+
+\begin_layout Plain Layout
+
+    expint=kB*((273+tmps)**2.0)/E*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	    np.exp(-E/(kB*(273+tmps)))*(1-2*kB*(273+tmps)/E)
+\end_layout
+
+\begin_layout Plain Layout
+
+    Ft=np.exp(g*Nd*s/beta*expint)
+\end_layout
+
+\begin_layout Plain Layout
+
+    return g*(Nd**2.0)*alpha*s*np.exp(-E/(kB*(273+tmps)))*
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    Ft/((Ft-alpha)**2.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+tims= range(25,160)
+\end_layout
+
+\begin_layout Plain Layout
+
+temps=[beta*tim for tim in tims]
+\end_layout
+
+\begin_layout Plain Layout
+
+n10, N1, Nd= 1e10 ,1e10, 1e12
+\end_layout
+
+\begin_layout Plain Layout
+
+alpha, g =n10/(n10+Nd), 1/(N1+Nd)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 1);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[nMOK(x) for x in temps],'o',label='n(t)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[30*TLMOK(x) for x in temps],'+',
+\end_layout
+
+\begin_layout Plain Layout
+
+label='TL x30');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(a)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('n(t) and TL (MOK)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.text(25,.8e10,'MOK model');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.subplot(1,2, 2);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLMOK(x) for x in temps],'+-',
+\end_layout
+
+\begin_layout Plain Layout
+
+label=r'$
+\backslash
+alpha$=0.01');
+\end_layout
+
+\begin_layout Plain Layout
+
+n10, N1, Nd= 1e10 ,1e10, 1e10
+\end_layout
+
+\begin_layout Plain Layout
+
+alpha, g =n10/(n10+Nd), 1/(N1+Nd)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLMOK(x) for x in temps],'^-',
+\end_layout
+
+\begin_layout Plain Layout
+
+label=r'$
+\backslash
+alpha$=0.5');
+\end_layout
+
+\begin_layout Plain Layout
+
+n10, N1, Nd= 1e10 ,1e10, 1e8
+\end_layout
+
+\begin_layout Plain Layout
+
+alpha, g =n10/(n10+Nd), 1/(N1+Nd)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.plot(temps,[TLMOK(x) for x in temps],'o-',
+\end_layout
+
+\begin_layout Plain Layout
+
+label=r'$
+\backslash
+alpha$=0.99');
+\end_layout
+
+\begin_layout Plain Layout
+
+leg = plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+leg.get_frame().set_linewidth(0.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.title('(b)');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlim(40,160);
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.ylabel('TL [a.u.]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.xlabel(r'Temperature T [$^{o}$C]');
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.tight_layout()
+\end_layout
+
+\begin_layout Plain Layout
+
+plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Plot-of-theMOKTL"
+
+\end_inset
+
+(a) Plots of the analytical solution of the MOK model, Eqs.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:MOKn(t)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:MOKTL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) for the parameters given in the text.
+ The MOK parameter 
+\begin_inset Formula $\alpha=0.0099$
+\end_inset
+
+ and the TL glow curve has first order characteristics.
+ (b) Plot of the analytical MOK Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:MOKTL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) for three values of the concentration of competitor trap 
+\begin_inset Formula $N_{d}=10^{12},$
+\end_inset
+
+ 
+\begin_inset Formula $10^{10}$
+\end_inset
+
+, 
+\begin_inset Formula $10^{8}$
+\end_inset
+
+ cm
+\begin_inset Formula $^{-3}$
+\end_inset
+
+.
+ The values of 
+\begin_inset Formula $\alpha=$
+\end_inset
+
+0.01, 0.5, 0.99 correspond approximately to 
+\begin_inset Formula $b\simeq1$
+\end_inset
+
+, 
+\begin_inset Formula $b\simeq1.5$
+\end_inset
+
+ and 
+\begin_inset Formula $b\simeq2$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
