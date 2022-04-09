@@ -9,6 +9,8 @@ This repository contains  the Python scripts in the book:
 
 **Springer, 2022**
 
+[Website for this book at Springer](https://link.springer.com/book/10.1007/978-3-030-96798-7)
+
 __________________________________
 
 **ABOUT THIS BOOK**
