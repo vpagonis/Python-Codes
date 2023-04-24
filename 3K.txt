@@ -1,4 +1,4 @@
-Wavelength, Intenisty
+Wavelength, Intensity
 0.516338,0.216933
 0.548758,0.282212
 0.573032,0.343468
